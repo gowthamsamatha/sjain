@@ -351,17 +351,17 @@ border-left: 1px solid #dfdfdf;
 .header-cta ul li:last-child{padding-right: 0; border-right: none;}
 .header-cta ul li i {
 	display: inline-block;
-margin-right: 5px;
+/* margin-right:px; */
 position: relative;
 top: 2px;
 color: #fff;
-background: #a08460;
-width: 30px;
-height: 30px;
+/* background: #a08460; */
+/* width: 50px;
+height: 50px; */
 text-align: center;
-line-height: 31px;
-border-radius: 50%;
-font-size: 12px;
+/* line-height: 31px; */
+/* border-radius: 50%; */
+font-size: 15px;
 }
 .header-top-cta ul li {
 	display: inline-block;
@@ -1039,14 +1039,14 @@ text-align: left;
 
 .call-box span {
     display: block;
-    color: #777777;
+    color: #fff;
     padding: 3px;
-    font-size: 18px;
+    font-size: 20px;
 }
 .call-box strong{
-    font-size: 24px;
+    font-size: 14px;
     font-family: 'PT Serif', serif;
-    color: #162542;
+    color: #fff;
 }
 
 /* 3. slider */
@@ -1484,7 +1484,8 @@ color: #a08460;
 }
 
 .about-content .btn.ss-btn:hover{
-    background: #162542;
+    /* background: #162542; */
+    background: #000;
     color: #fff;
 }
 .s-about-img {
@@ -2109,7 +2110,7 @@ border-radius: 0;
 .s-single-services:hover .second-services-content h5{color: #425cbb;}
 .s-single-services:hover .second-services-content a{color: #425cbb;}
 
-.s-single-services.active {background: url('../img/features/se-hover-bg.png');color: #fff;}
+.s-single-services.active {background: #000;color: #fff;}
 .s-single-services.active .services-icon i{color:#fff; background:#a08460;}
 .s-single-services.active .second-services-content h5{color: #fff;}
 .s-single-services.active .second-services-content a{color: #fff;}
@@ -3957,6 +3958,7 @@ opacity: 0.8;
 .blog-thumb2 {
     overflow: hidden;
     width: 100%;
+    
 }
 .blog-thumb2 img {
     width: auto;
@@ -4822,7 +4824,7 @@ position: relative;
     z-index: 2;
     text-align: center;
 }
-.gallery-image::before {
+/* .gallery-image::before {
     content: "\e035";
     font-family: "dripicons-v2" !important;
     position: absolute;
@@ -4840,7 +4842,7 @@ position: relative;
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
-}
+} */
 .gallery-image:hover::before {
     top: 50%;
     opacity: 1;
@@ -4862,10 +4864,10 @@ position: relative;
     opacity: .85;
 
 }
-.masonry-gallery-huge {
+/* .masonry-gallery-huge {
     margin: auto;
     padding-left: 23px;
-}
+} */
 .grid-item{
     margin: 15px;
 }
@@ -7490,7 +7492,7 @@ p.checkout-coupon input[type="text"] {
 
 .project-detail{
 	position: relative;
-	padding: 100px 0 85px;
+	padding: 0 0 85px;
 }
 
 .project-detail .upper-box{
@@ -9925,10 +9927,43 @@ blockquote a:hover {
     }
 }
 .contact-img{
-    background: url('../img/gallery/why-choose-us-banner.jpg');
+    background: url('../img/gallery/get-an-appointment.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%; /* or a specific width like 600px */
     height:100%;
-
+}
+.fixed-size {
+    width: 100%; /* Images in the first row take full width */
+    height: 500px; /* Maintain aspect ratio */
+  }
+  .flex-images {
+    display: flex;
+    gap: 10px; /* Space between the images */
+  }
+  .flex-images img {
+    flex: 1; /* Images in the second row share available space */
+    height: 300px; /* Set consistent height */
+    object-fit: cover; /* Crop to fit */
+  }
+ @media screen and (max-width: 767px){
+    .dispute-second-row{
+        display: none;
+    }
+    .breadcrumb-title h2{
+        font-size: 34px;
+        line-height: 1.5;
+        
+    }
+ }
+ @media screen and (min-width: 768px) {
+    .personal-injury-compensation{
+        height: 500px;
+        width: 80%;
+    }
+ }
+@media screen and (max-width: 320px){
+    .btn.ss-btn{
+        margin-bottom: 20px;
+    }
 }
